@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+		<title>Canvas Test</title>
+		<link rel="stylesheet" href="layout.css" />
+		<script src="game.js"></script>
+		<script src="excanvas.compiled.js"></script>
+	</head>
+	<body onload="setup()">
+		<div id="counter"></div>
+		<div id="container"><canvas id="screen" width="400" height="400">Canvas not working!</canvas></div>
+		<div id="button">
+			<select id="speed">
+				<option value="slow">Slow</option>
+				<option value="medium">Medium</option>
+				<option value="fast">Fast</option>
+				<option value="cheetah">Cheetah</option>
+				<option value="insane">Insane!</option>
+			</select>
+			<button onclick="game()">Go</button>
+		</div>
+		<div id="result"></div>
+		<div id="highscores">
+			<h2>High Scores</h2><br />
+			<h4>
+				<img src="cherry.png"/> - <span id="score1"></span><br />
+				<img src="apple.png"/> - <span id="score2"></span><br />
+				<img src="grape.png"/> - <span id="score3"></span><br />
+				<img src="banana.png"/> - <span id="score4"></span><br />
+				<img src="onion.png"/> - <span id="score5"></span>
+			</h4>
+		</div>
+	</body>
+</html>
